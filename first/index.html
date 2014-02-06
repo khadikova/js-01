@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Variables and Arrays</title>
+	<script>
+		function sayIt(word1,word2){
+		document.write(word1+", "+word2);
+		}
+		
+		function add(num1,num2){
+		sum = num1+num2;
+		document.write(sum);
+		}
+	
+	</script>
+	
+	<!--jQuery
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    });
+});
+	</script>-->
+
+</head>
+<body>
+	<div>
+		<p>
+		<script>
+			sayIt("Hello","world!");
+		</script>
+		</p>
+		<p>
+			<script>
+				add(5,5);
+			</script>
+		</p>
+		
+		<p>
+		<script>
+		var x=6;
+			switch(x){
+				case 2:
+					document.write("x is 2"+"<br/>");
+					break;
+				case 5:
+					document.write("x is 5"+"<br/>");
+					break;
+				case 3:
+					document.write("x is 3"+"<br/>");
+					break;
+				default:
+					document.write("x is not 2 or 3 or 5"+"<br/>");
+					break;
+	
+				}
+	
+		var day = new Date().getDay();
+			switch(day){
+				case 1:
+					document.write("Monday, ");
+					break;
+				case 2:
+					document.write("Tuesday, ");
+					break;
+				case 3:
+					document.write("Wednesday, ");
+					break;
+				case 4:
+					document.write("Thursday, ");
+					break;
+				default:
+					document.write("Happy Day!");
+					break;
+	
+				}
+
+		var day = new Date().getDate();
+		document.write(day+".");
+	
+		var month = new Date().getMonth();
+		document.write(month+".");
+	
+		var year = new Date().getFullYear();
+		document.write(year+"<br/>");
+	
+	
+	
+		var i=1;
+		while (i<=10){
+			if (i==6){
+				break;
+				}
+			if(i % 2){
+				i++;
+				continue;
+				}
+		
+			document.write(i+"<br/>");
+			i++;
+			}
+		</script>
+		</p>
+	</div>
+</body>
+</html>
