@@ -11,6 +11,16 @@
 		sum = num1+num2;
 		document.write(sum);
 		}
+		
+		function imgOn(){
+			var img= document.getElementById("block");
+			img.src = "blueblock.jpeg";
+		}
+		
+		function imgOut(){
+			var img= document.getElementById("block");
+			img.src = "redblock.jpeg";
+		}
 	
 	</script>
 	
@@ -100,6 +110,10 @@ $(document).ready(function(){
 			i++;
 			}
 		</script>
+		</p>
+		<p>
+		<h3>Hover over me!</h3>
+		<img id="block" onmouseover="imgOn()" onmouseout="imgOut()" src="redblock.jpeg">
 		</p>
 	</div>
 </body>
