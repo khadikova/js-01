@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var sum="";
+			function myFunction(y){
+				var num = y.toString();
+				sum = sum.concat(y);
+				document.getElementById("output").innerHTML=sum;
+				}
+			function add (){
+				sum = sum.concat("+");
+				document.getElementById("output").innerHTML=sum;
+				}
+			function mult (){
+				sum = sum.concat("*");
+				document.getElementById("output").innerHTML=sum;
+				}
+			function div (){
+				sum = sum.concat("/");
+				document.getElementById("output").innerHTML=sum;
+				}
+			function decim (){
+				sum = sum.concat(".");
+				document.getElementById("output").innerHTML=sum;
+				}
+			function equal(){
+				document.getElementById("output").innerHTML=eval(sum);
+				sum="";
+				}
+			function clearInp(){
+				document.getElementById("output").innerHTML=0;
+				sum="";
+				}
+			
+	
+		</script>
+	</head>
+
+	<body>
+
+		<table>
+			<tr><p id="output">0</p></tr>
+			<tr>
+				<td><button onclick="myFunction(7)">7</button></td>
+				<td><button onclick="myFunction(8)">8</button></td>
+				<td><button onclick="myFunction(9)">9</button></td>
+				<td><button onclick="add()">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="myFunction(4)">4</button></td>
+				<td><button onclick="myFunction(5)">5</button></td>
+				<td><button onclick="myFunction(6)">6</button></td>
+				<td><button onclick="mult()">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="myFunction(1)">1</button></td>
+				<td><button onclick="myFunction(2)">2</button></td>
+				<td><button onclick="myFunction(3)">3</button></td>
+				<td><button onclick="div()">/</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="myFunction(0)">0</button></td>
+				<td><button onclick="decim()">.</button></td>
+				<td><button onclick="clearInp()">c</button></td>
+				<td><button onclick="equal()">=</button></td>
+			</tr>
+		</table>
+
+	</body>
+</html> 
