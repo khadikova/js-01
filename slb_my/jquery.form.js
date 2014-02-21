@@ -29,7 +29,7 @@ $(document).ready(function(){
 			submitForm.prop("disabled",true);
 		}
 		else{
-			submitForm.removeAttr("disabled","disabled");
+			submitForm.removeProp("disabled");
 		}
 		//alert("Fill out the required fields");
 	};
@@ -40,7 +40,7 @@ $(document).ready(function(){
 		$(this).next().fadeOut("slow");
 	}).keyup(function(){
 		//check all fields for values
-		//requiredFields();
+		requiredFields();
 	});
 	$("#email").keyup(function(){
 		if (isValidEmail($(this).val())){
