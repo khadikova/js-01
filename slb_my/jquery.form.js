@@ -53,6 +53,22 @@ $(document).ready(function(){
 
 	requiredFields();
 
+	document.onkeydown = function(e){ 
+		if (window.event.keyCode == 27) {
+		history.go(-1);
+		}
+	};
+	//var overlay = document.getElementById("overlay");
+	//var modalwin = document.getElementById("modal");
+	modal.addEventListener("click",function(){
+		overlay.className="";
+		modal.style.display="none";
+	})
+	////Or with Jquery
+	// $(".overlay").click(function(){
+	// 	$(this).hide();
+	// })
+
 });
 
 
