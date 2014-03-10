@@ -1,6 +1,7 @@
 div.main{
 	margin:0 auto;
 	max-width:80%;
+	height:100%;
 }
 body {
 	
@@ -9,6 +10,7 @@ body {
 	margin:0;
 	font-size:0.875em;
 	color: #faf3bc;
+	height: 100%;
 }
 header{
 	width:100%;
@@ -62,6 +64,7 @@ header{
 
 .clearboth {
 	clear: both;
+	display: table;
 }
 
 .tag_line {
@@ -125,18 +128,19 @@ form span.error {
 	text-transform: uppercase;
 }
 .col{
-	display: inline-block;
+	display: table-cell;
 	padding: 15px;
 	vertical-align: top;
+	
 }
 .about{
 	width:60%;
-	margin-right:5px;
+	margin-right: 2px;
 	background-color: #CC6666;
 	border-radius: 5px;
 }
 .contact-us{
-	width:30%;
+	width:40%;
 	background-color: #666699;
 	border-radius: 5px;
 
@@ -181,11 +185,13 @@ footer{
   	height: initial;
   	width:initial;
   	margin:initial;
+  	font-size: initial;
   }
   .nav {
   	padding-left: initial;
   }
-  .nav li {
+  .nav li,
+  .col {
   	margin-top: 10px;
   }
   .logo {
