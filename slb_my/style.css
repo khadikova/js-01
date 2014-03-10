@@ -134,7 +134,7 @@ form span.error {
 	
 }
 .about{
-	width:60%;
+	width:40%;
 	margin-right: 2px;
 	background-color: #CC6666;
 	border-radius: 5px;
@@ -187,8 +187,13 @@ footer{
   	margin:initial;
   	font-size: initial;
   }
-  .nav {
-  	padding-left: initial;
+  .nav,
+  .nav li,
+  .nav li a,
+  header {
+  	padding-left: 0;
+  	margin:0;
+
   }
   .nav li,
   .col {
